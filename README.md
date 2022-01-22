@@ -6,7 +6,7 @@ This project focuses on sentiment analysis on tweets using Apache Spark Streamin
 Two separate notebooks were created to successfully perform the sentiment analysis on tweets for specific location, language and keyword. The first notebook should be run first (letting the last cell running) and then the second notebook.
 
 ## Notebook_1: tweeypy_notebook
-The first notebook named as tweepy_notebook.ipynb was created to connect to Twitter API and retrieve tweets using the Academic account credentials. In this notebook the Twitter account's credentials were authenticated and TweetListen was used to listen the tweets and then send the data through the TCP socket between Tweeter's API and Spark.
+The first notebook named as tweepy_notebook.ipynb was created to connect to Twitter API and retrieve tweets using the Academic account credentials. In this notebook the Twitter account's credentials were authenticated and TweetListen was used to listen the tweets and then send the data through the TCP socket between Tweeter's API and Spark. A JSOM module had to be used to handle the data of JSON objects
 
 ### tweepy
 Tweepy library in Python is required to connect to the Twitter API and build a pipeline for data streaming. The stream was built by using the imported classes of tweepy, *Stream* and *Stream Listener* and *OAuthHandler* was used to authenticate to Twitter.
