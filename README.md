@@ -8,6 +8,9 @@ Two separate notebooks were created to successfully perform the sentiment analys
 ## Notebook_1: tweeypy_notebook
 The first notebook named as tweepy_notebook.ipynb was created to connect to Twitter API and retrieve tweets using the Academic account credentials. In this notebook the Twitter account's credentials were authenticated and TweetListen was used to listen the tweets and then send the data through the TCP socket between Tweeter's API and Spark.
 
+### tweepy
+Tweepy library in Python is required to connect to the Twitter API and build a pipeline for data streaming. The stream was built by using the imported classes of tweepy, *Stream* and *Stream Listener* and *OAuthHandler* was used to authenticate to Twitter.
+
 ### TweetListener
 TweetsListener is a base class to listen tweets only and stop listening when a specific number of tweets collected or time listening is out. If both parameters are 0 then it can run forever.
 
@@ -24,10 +27,11 @@ PySpark is an interface for Apache Spark in Python. It not only allows you to wr
 TextBlob is a Python library for processing textual data. It provides a simple API for diving into common natural language processing (NLP) tasks such as part-of-speech tagging, noun phrase extraction, sentiment analysis, classification, translation, and more.
 
 ## Conclusion
-
+What are the real-time dominant sentiments of the public opinion regarding a specific topic or hashtag? Is the public positive or negative about it? Does the average person think subjectively or objectively?
 
 # References
 - https://towardsdatascience.com/sentiment-analysis-on-streaming-twitter-data-using-spark-structured-streaming-python-fc873684bfe3
+- https://towardsdatascience.com/step-by-step-twitter-sentiment-analysis-in-python-d6f650ade58d
 - https://developer.twitter.com/en/docs/twitter-api/v1/tweets/filter-realtime/guides/basic-stream-parameters
 - https://docs.oracle.com/javase/tutorial/networking/sockets/definition.html#:~:text=A%20socket%20is%20one%20endpoint,address%20and%20a%20port%20number.
 - https://spark.apache.org/docs/latest/api/python/index.html#:~:text=PySpark%20is%20an%20interface%20for,data%20in%20a%20distributed%20environment.
